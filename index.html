@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== Primary SEO ===== -->
+<title>TBH Tools — Automação para Task Bar Hero | Farm, Craft e Builds Automáticos</title>
+<meta name="description" content="Deixe ligado e nunca mais se preocupe com inventário cheio. O TBH Tools automatiza craft de itens, farma stages em ciclo e otimiza Gold ou EXP sozinho no Task Bar Hero. 100% seguro, não modifica o jogo.">
+<meta name="keywords" content="TBH Tools, Task Bar Hero, automação, auto farm, auto craft, builds, otimização gold, otimização exp, bot task bar hero, ferramenta task bar hero">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="TBH Tools">
+<link rel="canonical" href="https://tbhtools.thur.dev/">
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tbhtools.thur.dev/">
+<meta property="og:title" content="TBH Tools — Automação para Task Bar Hero">
+<meta property="og:description" content="Deixe ligado e nunca mais se preocupe com inventário cheio. Auto-craft, auto-farm em ciclo, benchmark automático e builds compartilhadas. 100% seguro.">
+<meta property="og:image" content="https://tbhtools.thur.dev/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TBH Tools — Interface do aplicativo de automação para Task Bar Hero">
+<meta property="og:site_name" content="TBH Tools">
+<meta property="og:locale" content="pt_BR">
+
+<!-- ===== Twitter Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TBH Tools — Automação para Task Bar Hero">
+<meta name="twitter:description" content="Auto-craft, auto-farm em ciclo, benchmark automático e builds compartilhadas. 100% seguro, não modifica o jogo.">
+<meta name="twitter:image" content="https://tbhtools.thur.dev/assets/og-image.png">
+<meta name="twitter:image:alt" content="TBH Tools — Interface de automação para Task Bar Hero">
+
+<!-- ===== Favicon / Icons ===== -->
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
+<link rel="apple-touch-icon" href="assets/logo-icon.png">
+<meta name="theme-color" content="#FF6A1A">
+<meta name="msapplication-TileColor" content="#0b0a09">
+<meta name="application-name" content="TBH Tools">
+
+<!-- ===== JSON-LD Structured Data ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://tbhtools.thur.dev/#software",
+      "name": "TBH Tools",
+      "description": "Ferramenta de automação para Task Bar Hero. Automatiza craft de itens, farma stages em ciclo e otimiza Gold ou EXP. 100% seguro — não modifica o jogo.",
+      "url": "https://tbhtools.thur.dev/",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Windows 10, Windows 11",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "9.90",
+          "priceCurrency": "BRL",
+          "description": "7 dias de acesso completo ao TBH Tools",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Basic",
+          "price": "19.90",
+          "priceCurrency": "BRL",
+          "description": "30 dias de acesso completo ao TBH Tools",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "39.90",
+          "priceCurrency": "BRL",
+          "description": "90 dias de acesso completo ao TBH Tools — melhor custo-benefício",
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "featureList": [
+        "Auto-craft de itens — inventário nunca enche",
+        "Auto-farm em ciclo 24/7",
+        "Benchmark automático de stages",
+        "Importação de builds de heróis",
+        "Compartilhamento de builds com a comunidade",
+        "Otimização contínua de Gold ou EXP"
+      ],
+      "screenshot": "https://tbhtools.thur.dev/assets/app-home.png",
+      "image": "https://tbhtools.thur.dev/assets/logo.png",
+      "inLanguage": "pt-BR",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://tbhtools.thur.dev/#org"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://tbhtools.thur.dev/#org",
+      "name": "TBH Tools",
+      "url": "https://tbhtools.thur.dev/",
+      "logo": "https://tbhtools.thur.dev/assets/logo.png",
+      "sameAs": ["https://discord.gg/FCMmgRSVbf"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tbhtools.thur.dev/#website",
+      "url": "https://tbhtools.thur.dev/",
+      "name": "TBH Tools",
+      "description": "Automação para Task Bar Hero",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://tbhtools.thur.dev/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Em qual sistema o TBH Tools funciona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O TBH Tools roda em Windows 10 e 11. Ele funciona junto com o jogo, em segundo plano, sem você precisar ficar de olho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como recebo o download depois de assinar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você baixa o TBH Tools direto pelo nosso servidor do Discord, onde também mantemos todas as atualizações. Depois de instalar, é só assinar o plano dentro do próprio app — sem sair pra lugar nenhum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O TBH Tools é seguro usar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim — 100% seguro. O TBH Tools não modifica arquivos do jogo, não lê a memória e não altera a integridade do jogo de forma alguma. Ele apenas lê o que já está disponível na tela e trabalha em cima disso pra automatizar suas ações. Nada invasivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que muda entre Starter, Basic e Pro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todos liberam o TBH Tools completo, com todos os recursos. A diferença é o tempo de acesso: 7, 30 ou 90 dias. Quanto maior o plano, menor o custo por dia — o Pro é o melhor custo-benefício."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Fonts ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('anim');</script>
+</head>
+<body>
+
+<div class="bg-fx"><div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div></div>
+<div class="bg-grid"></div>
+<div class="bg-noise"></div>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" aria-label="Navegação principal">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="TBH Tools — início">
+      <img src="assets/logo-icon.png" alt="TBH Tools logo" width="34" height="34">
+      <b>TBH<span> Tools</span></b>
+    </a>
+    <div class="nav-links" role="list">
+      <a href="#recursos" role="listitem">Recursos</a>
+      <a href="#demo" role="listitem">Demo</a>
+      <a href="#precos" role="listitem">Preços</a>
+      <a href="#faq" role="listitem">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer" aria-label="Entrar no Discord do TBH Tools">Discord</a>
+      <a class="btn btn-primary" href="#precos" aria-label="Ver planos de preços">Baixar</a>
+      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="drawer" id="mobile-drawer" role="dialog" aria-label="Menu de navegação" aria-hidden="true">
+  <a href="#recursos">Recursos</a>
+  <a href="#demo">Demo</a>
+  <a href="#precos">Preços</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn btn-discord" href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer">Entrar no Discord</a>
+  <a class="btn btn-primary" href="#precos">Ver planos</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<header id="top" class="hero">
+  <div class="wrap">
+    <div class="badge reveal">
+      <img src="assets/logo-icon.png" alt="" width="22" height="22" aria-hidden="true">
+      Automação para <b>&nbsp;Task Bar Hero</b>
+    </div>
+    <h1 class="reveal d1">Deixe ligado.<br><span class="grad-text">O herói joga por você.</span></h1>
+    <p class="sub reveal d2">O TBH Tools automatiza o craft de itens, farma stages em ciclo e otimiza Gold ou EXP sozinho. Você nunca mais volta pra um inventário cheio.</p>
+    <div class="hero-cta reveal d3">
+      <a class="btn btn-primary btn-lg" href="#precos" aria-label="Baixar TBH Tools para Windows">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        Baixar para Windows
+      </a>
+      <a class="btn btn-discord btn-lg" href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer" aria-label="Entrar no servidor Discord do TBH Tools">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.5 3l-.2.4a18 18 0 0 1 4.2 1.3 18.7 18.7 0 0 0-16-.0A18 18 0 0 1 7.7 3.4L7.5 3A19.8 19.8 0 0 0 2.7 4.4 20.3 20.3 0 0 0 .2 17.9a19.9 19.9 0 0 0 6 3 14.5 14.5 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.1 0l.5.4a12.9 12.9 0 0 1-2 1A14.5 14.5 0 0 0 16.8 21a19.9 19.9 0 0 0 6-3 20.3 20.3 0 0 0-2.5-13.5ZM8.3 14.6c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm7.4 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></svg>
+        Entrar no Discord
+      </a>
+    </div>
+    <div class="hero-meta reveal d4" aria-label="Destaques do produto">
+      <span><span class="dot" aria-hidden="true"></span>100% seguro</span>
+      <span>· Não modifica o jogo</span>
+      <span>· Windows 10 &amp; 11</span>
+      <span>· Atualizações constantes</span>
+    </div>
+
+    <!-- showcase -->
+    <div class="showcase reveal d2">
+      <div class="showcase-frame glass" role="img" aria-label="Interface do TBH Tools rodando">
+        <div class="win-bar" aria-hidden="true">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <span class="title">TBHTOOLS — Live</span>
+        </div>
+        <img class="shot" src="assets/app-home.png" alt="Interface do TBH Tools — tela de início com farm e automação" width="1040" loading="eager">
+      </div>
+
+      <div class="float-card float-stat glass" aria-live="polite" aria-label="Gold acumulado em tempo real">
+        <div class="lbl">Gold acumulado</div>
+        <div class="val" id="goldVal">414.5<span>k</span></div>
+        <div class="delta">▲ farmando agora</div>
+      </div>
+
+      <div class="float-card float-feed glass" aria-live="polite" aria-label="Feed de eventos ao vivo">
+        <div class="feed-head">
+          <span class="lbl">Eventos</span>
+          <span class="live"><i aria-hidden="true"></i> AO VIVO</span>
+        </div>
+        <div class="feed-list" id="feed" role="log" aria-label="Eventos de automação ao vivo"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip reveal" aria-label="Recursos principais">
+    <div class="wrap">
+      <span><b>Auto-craft</b> de itens</span>
+      <span><b>Farm</b> em ciclo 24/7</span>
+      <span><b>Benchmark</b> automático</span>
+      <span>Builds <b>importadas &amp; compartilhadas</b></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== FEATURES ===== -->
+<section id="recursos" class="features" aria-labelledby="feat-heading">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recursos</span>
+      <h2 id="feat-heading">Tudo que o seu grind precisava</h2>
+      <p>Configure uma vez. O TBH Tools cuida do resto enquanto você vive a vida.</p>
+    </div>
+    <div class="feat-grid" role="list">
+      <article class="feat-card span2 glass reveal" role="listitem">
+        <div class="glowtag" aria-hidden="true"></div>
+        <div>
+          <div class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3z"/></svg>
+          </div>
+          <h3>Auto-craft de itens — inventário nunca enche</h3>
+          <p>O recurso que muda o jogo: o TBH Tools crafta seus itens automaticamente enquanto você farma — ou enquanto dorme. Esqueça aquele inventário lotado travando o progresso. Liga e esquece.</p>
+        </div>
+      </article>
+
+      <article class="feat-card glass reveal d1" role="listitem">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v4h-4"/></svg>
+        </div>
+        <h3>Auto-farm em ciclo</h3>
+        <p>Cicla entre stages sozinho, sem babá. Configure a rota e deixe rodar 24 horas por dia.</p>
+      </article>
+
+      <article class="feat-card glass reveal d2" role="listitem">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        </div>
+        <h3>Benchmark automático</h3>
+        <p>Testa o que sua build atual aguenta e ajusta o farm pra maximizar <b>Gold</b> ou <b>EXP</b> — você escolhe o objetivo.</p>
+      </article>
+
+      <article class="feat-card glass reveal d1" role="listitem">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        </div>
+        <h3>Importação de builds</h3>
+        <p>Importa automaticamente a build dos seus heróis. Zero configuração manual pra começar.</p>
+      </article>
+
+      <article class="feat-card glass reveal d2" role="listitem">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8h16v-8M16 6l-4-4-4 4M12 2v14"/></svg>
+        </div>
+        <h3>Compartilhar builds</h3>
+        <p>Exporte, importe e compartilhe builds com a comunidade num clique. Aprenda com os melhores.</p>
+      </article>
+
+      <article class="feat-card glass reveal d3" role="listitem">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Otimização contínua</h3>
+        <p>Enquanto roda, o TBH Tools recalcula e melhora a rota de farm. Sempre no rendimento máximo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEMO ===== -->
+<section id="demo" class="demo" aria-labelledby="demo-heading">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Demonstração</span>
+      <h2 id="demo-heading">Veja em ação</h2>
+      <p>Importação e compartilhamento de builds dos heróis, rodando em tempo real.</p>
+    </div>
+    <div class="video-frame reveal" id="demoVideo">
+      <video id="vid" preload="metadata" playsinline poster="assets/app-home.png" aria-label="Vídeo demonstração do TBH Tools — sistema de builds">
+        <source src="https://agnjph6hm77ppch8.public.blob.vercel-storage.com/videos/builds-demo.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5. <a href="https://discord.gg/FCMmgRSVbf">Acesse o Discord</a> para ver a demonstração.
+      </video>
+      <div class="overlay" role="button" aria-label="Reproduzir vídeo de demonstração" tabindex="0">
+        <span class="soon">Builds</span>
+        <div class="play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <span class="vlabel">tbh-tools — builds.mp4</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="precos" class="pricing" aria-labelledby="price-heading">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Preços</span>
+      <h2 id="price-heading">Escolha o seu tempo de farm</h2>
+      <p>Todos os planos liberam o TBH Tools completo. A diferença é só a duração.</p>
+    </div>
+    <div class="price-grid" role="list">
+      <!-- Starter -->
+      <div class="price-card glass reveal" role="listitem" aria-label="Plano Starter — R$9,90 por 7 dias">
+        <span class="tier">Starter</span>
+        <p class="desc">Pra testar e sentir o poder da automação.</p>
+        <div class="amt"><span class="cur">R$</span><span class="big">9,90</span></div>
+        <div class="period">por 7 dias</div>
+        <div class="perday">≈ R$1,41 / dia</div>
+        <ul aria-label="Incluso no plano Starter">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Auto-craft de itens</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Auto-farm em ciclo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Benchmark &amp; otimização</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Builds importadas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Suporte no Discord</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer" aria-label="Começar com o plano Starter pelo Discord">Começar</a>
+      </div>
+
+      <!-- Basic -->
+      <div class="price-card glass reveal d1" role="listitem" aria-label="Plano Basic — R$19,90 por 30 dias">
+        <span class="tier">Basic</span>
+        <p class="desc">O equilíbrio ideal pra quem joga todo dia.</p>
+        <div class="amt"><span class="cur">R$</span><span class="big">19,90</span></div>
+        <div class="period">por 30 dias</div>
+        <div class="perday">≈ R$0,66 / dia</div>
+        <ul aria-label="Incluso no plano Basic">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Tudo do Starter</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>30 dias de automação 24/7</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Compartilhamento de builds</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Atualizações incluídas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Suporte prioritário</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer" aria-label="Assinar plano Basic pelo Discord">Assinar Basic</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="price-card featured glass reveal d2" role="listitem" aria-label="Plano Pro — R$39,90 por 90 dias — Mais popular">
+        <span class="pop" aria-label="Plano mais popular">Mais popular</span>
+        <span class="tier">Pro</span>
+        <p class="desc">Melhor custo-benefício. Farme a temporada inteira.</p>
+        <div class="amt"><span class="cur">R$</span><span class="big">39,90</span></div>
+        <div class="period">por 90 dias <span class="save">−33% / dia</span></div>
+        <div class="perday">≈ R$0,44 / dia</div>
+        <ul aria-label="Incluso no plano Pro">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Tudo do Basic</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>90 dias — o menor preço por dia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Acesso antecipado a recursos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Cargo exclusivo no Discord</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Suporte prioritário</li>
+        </ul>
+        <a class="btn btn-primary" href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer" aria-label="Assinar plano Pro pelo Discord">Assinar Pro</a>
+      </div>
+    </div>
+    <p class="price-note">Baixe pelo Discord e assine direto dentro do app · Cancele quando quiser</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq" aria-labelledby="faq-heading">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 id="faq-heading">Perguntas frequentes</h2>
+      <p>Não achou o que procurava? Chama a gente no Discord.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item glass reveal">
+        <summary class="faq-q">Em qual sistema o TBH Tools funciona?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">O TBH Tools roda em <b>Windows 10 e 11</b>. Ele funciona junto com o jogo, em segundo plano, sem você precisar ficar de olho.</div>
+      </details>
+      <details class="faq-item glass reveal">
+        <summary class="faq-q">Como recebo o download depois de assinar?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Você baixa o TBH Tools direto pelo nosso <b>servidor do Discord</b>, onde também mantemos todas as atualizações. Depois de instalar, é só <b>assinar o plano dentro do próprio app</b> — sem sair pra lugar nenhum.</div>
+      </details>
+      <details class="faq-item glass reveal">
+        <summary class="faq-q">Preciso deixar o jogo aberto?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Sim. O TBH Tools automatiza o jogo enquanto ele está rodando — você liga, configura a rota de farm e pode deixar o PC trabalhando sozinho, inclusive durante a noite.</div>
+      </details>
+      <details class="faq-item glass reveal">
+        <summary class="faq-q">Como funciona o benchmark automático?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Ele testa os stages e mede até onde sua build atual aguenta. Com isso, escolhe a melhor rota de farm de acordo com o seu objetivo — maximizar <b>Gold</b> ou <b>EXP</b>.</div>
+      </details>
+      <details class="faq-item glass reveal">
+        <summary class="faq-q">O que muda entre Starter, Basic e Pro?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Todos liberam o TBH Tools completo, com todos os recursos. A diferença é o <b>tempo de acesso</b>: 7, 30 ou 90 dias. Quanto maior o plano, menor o custo por dia — o Pro é o melhor custo-benefício.</div>
+      </details>
+      <details class="faq-item glass reveal">
+        <summary class="faq-q">É seguro usar?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-a">Sim — <b>100% seguro</b>. O TBH Tools <b>não modifica arquivos</b> do jogo, <b>não lê a memória</b> e <b>não altera a integridade</b> do jogo de forma alguma. Ele apenas lê o que já está disponível na tela e trabalha em cima disso pra automatizar suas ações. Nada invasivo.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band" aria-label="Call to action — comece agora">
+  <div class="wrap">
+    <div class="cta-inner reveal">
+      <img src="assets/logo-icon.png" alt="TBH Tools" width="72" height="72" aria-hidden="true">
+      <h2>Liga, configura e <span class="grad-text">esquece.</span></h2>
+      <p>Entre na comunidade, baixe o TBH Tools e deixe seu herói farmando enquanto você vive a vida.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="#precos" aria-label="Ver todos os planos">Ver planos</a>
+        <a class="btn btn-discord btn-lg" href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer" aria-label="Entrar no Discord do TBH Tools">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.5 3l-.2.4a18 18 0 0 1 4.2 1.3 18.7 18.7 0 0 0-16-.0A18 18 0 0 1 7.7 3.4L7.5 3A19.8 19.8 0 0 0 2.7 4.4 20.3 20.3 0 0 0 .2 17.9a19.9 19.9 0 0 0 6 3 14.5 14.5 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.1 0l.5.4a12.9 12.9 0 0 1-2 1A14.5 14.5 0 0 0 16.8 21a19.9 19.9 0 0 0 6-3 20.3 20.3 0 0 0-2.5-13.5ZM8.3 14.6c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm7.4 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></svg>
+          Entrar no Discord
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top" aria-label="TBH Tools — voltar ao topo">
+          <img src="assets/logo-icon.png" alt="TBH Tools" width="34" height="34">
+          <b>TBH<span> Tools</span></b>
+        </a>
+        <p>Automação inteligente para Task Bar Hero. Craft, farm e otimização — no piloto automático.</p>
+      </div>
+      <div class="foot-cols">
+        <nav class="foot-col" aria-label="Links do produto">
+          <h4>Produto</h4>
+          <a href="#recursos">Recursos</a>
+          <a href="#demo">Demonstração</a>
+          <a href="#precos">Preços</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <nav class="foot-col" aria-label="Links da comunidade">
+          <h4>Comunidade</h4>
+          <a href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://discord.gg/FCMmgRSVbf" target="_blank" rel="noopener noreferrer">Suporte</a>
+          <a href="#precos">Baixar</a>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 TBH Tools. Todos os direitos reservados.</span>
+      <span class="disclaimer">Task Bar Hero é marca de seus respectivos donos. O TBH Tools é uma ferramenta independente, sem afiliação com os desenvolvedores do jogo.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
