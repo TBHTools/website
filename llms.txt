@@ -1,0 +1,48 @@
+# TBH Tools
+
+> Ferramenta de automação para Task Bar Hero. Automatiza craft de itens, farm de stages em ciclo e otimiza Gold ou EXP. 100% seguro — não modifica arquivos, não lê memória, não altera a integridade do jogo.
+
+## O que é
+
+TBH Tools é um aplicativo Windows que roda em segundo plano enquanto o Task Bar Hero está aberto, automatizando tarefas repetitivas para que o jogador possa focar em outras coisas.
+
+## Recursos principais
+
+- **Auto-craft de itens**: crafta automaticamente enquanto você farma ou dorme — inventário nunca enche
+- **Auto-farm em ciclo**: cicla entre stages sozinho 24/7, sem intervenção manual
+- **Benchmark automático**: testa o que a build atual aguenta e ajusta a rota para maximizar Gold ou EXP
+- **Importação de builds**: importa automaticamente a build dos heróis, zero configuração manual
+- **Compartilhamento de builds**: exporta, importa e compartilha builds com a comunidade
+- **Otimização contínua**: recalcula e melhora a rota de farm em tempo real
+
+## Segurança
+
+100% seguro. Não modifica arquivos do jogo, não lê a memória do processo e não altera a integridade do jogo de forma alguma. Apenas lê o que está disponível na tela e trabalha em cima disso.
+
+## Planos e preços
+
+| Plano   | Preço    | Duração | Custo/dia    |
+|---------|----------|---------|--------------|
+| Starter | R$ 9,90  | 7 dias  | ≈ R$ 1,41    |
+| Basic   | R$ 19,90 | 30 dias | ≈ R$ 0,66    |
+| Pro     | R$ 39,90 | 90 dias | ≈ R$ 0,44 (-33%) |
+
+Todos os planos incluem acesso completo a todos os recursos. A diferença é apenas a duração.
+
+## Como obter
+
+1. Entre no servidor do Discord: https://discord.gg/FCMmgRSVbf
+2. Baixe o instalador pelo Discord
+3. Instale e abra o TBH Tools
+4. Assine o plano desejado diretamente dentro do app
+
+## Compatibilidade
+
+- Windows 10 e Windows 11
+- Requer Task Bar Hero instalado via Steam
+
+## Links
+
+- Site: https://tbhtools.thur.dev
+- Discord: https://discord.gg/FCMmgRSVbf
+- Download: via Discord após assinar
